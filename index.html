@@ -91,10 +91,100 @@
       rel="stylesheet"
     />
 
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <div class="header-email">
+        <a href="mailto:hi@arif.interactive" class="header-email__icon"
+          ><img src="./assets/icons/email.svg" alt=""
+        /></a>
+        <a href="mailto:hi@arif.interactive" class="header-email__link"
+          >hi@arif.interactive</a
+        >
+      </div>
+
+      <a href="/">
+        <img
+          src="./assets/images/logo.png"
+          alt="Portfolio"
+          class="header__logo"
+        />
+      </a>
+
+      <nav class="navbar">
+        <ul>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Journey</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Service</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Hero ===== -->
+      <section class="hero">
+        <div class="container">
+          <div class="row hero__row">
+            <div class="col-lg-7 col-12">
+              <img
+                src="./assets/images/hero.png"
+                alt="An Interactive Designer"
+                class="hero__img"
+              />
+            </div>
+            <div class="hero__content col-lg-5 col-12">
+              <h1 class="heading">An Interactive Designer</h1>
+              <p class="hero__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                urna, non nisl tincidunt ut elementum turpis.
+              </p>
+              <div class="hero-cta">
+                <a href="#!" class="btn">Book a Call</a>
+                <a href="#!" class="hero-cta__link">My Works</a>
+              </div>
+              <div class="hero-social">
+                <p>Follow me on:</p>
+                <a href="#!"><i class="fa-brands fa-behance"></i></a>
+                <a href="#!"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/images/background.svg"
+          alt=""
+          class="hero__background--large"
+        />
+        <img
+          src="./assets/images/background.svg"
+          alt=""
+          class="hero__background--small"
+        />
+      </section>
+    </main>
+  </body>
 </html>
