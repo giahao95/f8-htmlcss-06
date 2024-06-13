@@ -201,3 +201,65 @@ a {
   bottom: -15%;
   right: -3%;
 }
+
+/* ===== Company ===== */
+.company {
+  margin-top: 98px;
+}
+
+.company .container > .row {
+  align-items: flex-end;
+}
+
+h2.company__heading {
+  position: relative;
+  padding-left: 99px;
+  font-size: 4.2rem;
+  line-height: 1.19;
+  letter-spacing: -1.68px;
+}
+
+.company__heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 20px;
+  display: block;
+  width: 86px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.company__list {
+  align-items: center;
+}
+
+.company__brand {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.company__brand + .company__brand {
+  margin-top: 30px;
+}
+
+.company__icon--background {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.company__brand .warner-bros-icon {
+  background-color: #fbfaff;
+}
+
+.company__brand .upwork-icon {
+  width: 33px;
+  height: 33px;
+  background-color: #14a800;
+}
