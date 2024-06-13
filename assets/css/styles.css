@@ -263,3 +263,34 @@ h2.company__heading {
   height: 33px;
   background-color: #14a800;
 }
+
+/* ===== Services ====== */
+.services {
+  margin-top: 130px;
+}
+
+.services__heading,
+.services__desc {
+  text-align: center;
+}
+
+.services__desc {
+  width: 48%;
+  margin: 20px auto 60px;
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
+
+.services-item {
+  padding: 32px 43px;
+  background-color: #fbfaff;
+}
+
+.services-item__heading {
+  margin-bottom: 15px;
+}
+
+.services-item__desc {
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
