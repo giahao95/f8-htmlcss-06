@@ -70,6 +70,13 @@ a {
   color: var(--primary-color);
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ===== Header ===== */
 .header {
   margin: 20px auto 0;
@@ -293,4 +300,94 @@ h2.company__heading {
 .services-item__desc {
   font-size: 1.8rem;
   line-height: 1.66;
+}
+
+/* ===== Projects ====== */
+.projects {
+  margin-top: 140px;
+  padding: 86px 0;
+  background-color: var(--primary-color);
+}
+
+.projects__top {
+  align-items: center;
+}
+
+.projects__heading {
+  color: #fff;
+  line-height: 1.17;
+}
+
+.projects__desc {
+  width: 60%;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
+
+.projects__bottom {
+  margin-top: 70px;
+  row-gap: 30px;
+}
+
+.projects-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 23px 23px 23px 34px;
+  background-color: #fbfaff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.projects-item__desc {
+  margin: 10px 0 20px;
+  line-height: 1.43;
+}
+
+.projects-item__link {
+  color: #080415;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.projects-item:hover .projects-item__link {
+  color: var(--primary-color);
+}
+
+.projects-item-image img {
+  position: relative;
+  width: 246px;
+  height: 187px;
+  transition: scale 0.3s;
+  z-index: 1;
+}
+
+.projects-item:hover .projects-item-image img {
+  scale: 1.1;
+}
+
+.projects-item__background-left {
+  position: absolute;
+  top: 0;
+  right: -11px;
+  width: 427px;
+}
+
+.projects-item__background-right {
+  position: absolute;
+  top: 0;
+  right: -24px;
+  width: 280px;
+}
+
+.projects__btn {
+  margin-top: 80px;
+  position: relative;
+  left: 50%;
+  translate: -50% 0;
+  background-color: #fff;
+  color: #080415;
 }
