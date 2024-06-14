@@ -77,6 +77,32 @@ a {
   overflow: hidden;
 }
 
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #cac9d0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot + .dot {
+  margin-left: 10px;
+}
+
+.dot:hover {
+  background-color: var(--primary-color);
+  scale: 1.1;
+}
+
+.dot.active {
+  background-color: var(--primary-color);
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+
 /* ===== Header ===== */
 .header {
   margin: 20px auto 0;
@@ -548,32 +574,6 @@ h2.company__heading {
   margin-top: 40px;
 }
 
-.feedback__dot {
-  width: 12px;
-  height: 12px;
-  background-color: #cac9d0;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.feedback__dot + .feedback__dot {
-  margin-left: 10px;
-}
-
-.feedback__dot:hover {
-  background-color: var(--primary-color);
-  scale: 1.1;
-}
-
-.feedback__dot.active {
-  background-color: var(--primary-color);
-  outline: 1px solid currentColor;
-  outline-offset: 3px;
-}
-
 /* ===== Questions ===== */
 .questions {
   margin-top: 170px;
@@ -658,4 +658,47 @@ h2.company__heading {
 
 .question__radio:checked ~ .question__text {
   display: block;
+}
+
+/* ===== Atmosphere ===== */
+.atmosphere {
+  margin-top: 160px;
+  text-align: center;
+}
+
+.atmosphere__desc {
+  margin: 20px auto 30px;
+  width: 48%;
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
+
+.atmosphere__link {
+  position: relative;
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -1.28px;
+}
+
+.atmosphere__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.atmosphere__images {
+  margin-top: 70px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.atmosphere__img {
+  width: 370px;
+  height: 529px;
+  object-fit: cover;
 }
