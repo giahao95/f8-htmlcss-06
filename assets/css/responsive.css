@@ -1,0 +1,393 @@
+@media (max-width: 991.98px) {
+  h1.heading {
+    font-size: 4.2rem;
+    line-height: 1.19;
+    letter-spacing: -1.68px;
+  }
+
+  h2.heading {
+    font-size: 3.6rem;
+    line-height: 1.16;
+    letter-spacing: -1.44px;
+  }
+
+  h3.heading {
+    font-size: 2.4rem;
+    line-height: 1.41;
+    letter-spacing: -0.96px;
+  }
+
+  /* ===== Company ===== */
+  h2.company__heading {
+    padding: 0;
+    font-size: 2.8rem;
+    line-height: 1.21;
+    letter-spacing: -1.12px;
+    text-align: center;
+  }
+
+  .company__heading::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    translate: -50% 0;
+    width: 48px;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+
+  .company__list {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  /* ===== Services ===== */
+  .services__desc {
+    width: 90%;
+  }
+
+  .services__direction {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services__list > div:last-child,
+  .services__list > div:nth-child(2) {
+    display: none;
+  }
+
+  /* ===== Projects ===== */
+  .projects__heading {
+    text-align: center;
+  }
+
+  .projects__desc {
+    width: 90%;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .projects-item {
+    padding: 20px 15px;
+    column-gap: 10px;
+  }
+
+  .projects-item__desc {
+    --line-clamp: 3;
+    font-size: 1.4rem;
+  }
+
+  .projects-item__link {
+    font-size: 1.6rem;
+  }
+
+  .projects-item-image img {
+    width: 122px;
+    height: 93px;
+  }
+
+  .projects__btn {
+    margin-top: 50px;
+  }
+
+  .projects-item__background-left {
+    width: 320px;
+    top: 0%;
+    left: 30%;
+  }
+
+  .projects-item__background-right {
+    width: 220px;
+    top: -50%;
+    right: -23%;
+  }
+
+  /* ===== About ===== */
+  .about {
+    margin-top: 120px;
+  }
+
+  .about__text {
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: -0.8px;
+  }
+
+  .about__text img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .about__number {
+    font-size: 3rem;
+    line-height: 1.4;
+    letter-spacing: 0.9px;
+  }
+
+  .about__title {
+    line-height: 1.37;
+  }
+
+  .about__video {
+    margin-top: 40px;
+  }
+
+  /* ===== Feedback ===== */
+  .feedback__text {
+    width: 80%;
+  }
+
+  /* ===== Questions ===== */
+  .questions__item {
+    width: 100%;
+  }
+
+  .question__text {
+    width: 70%;
+  }
+
+  /* ===== Atmosphere ===== */
+  .atmosphere {
+    margin-top: 120px;
+  }
+
+  .atmosphere__desc {
+    width: 80%;
+  }
+
+  .atmosphere__link {
+    font-size: 2.5rem;
+  }
+
+  .atmosphere__img {
+    width: 100%;
+    height: 503px;
+  }
+
+  .atmosphere__direction {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ===== Banner ===== */
+  .banner {
+    width: 100%;
+  }
+
+  .banner__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .banner__desc {
+    width: 70%;
+  }
+
+  .banner__background-1 {
+    width: 100%;
+    left: 50%;
+    translate: -50% 0;
+  }
+
+  .banner__background-2,
+  .banner__background-3 {
+    display: none;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    margin-top: 120px;
+    padding-top: 100px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    top: -50%;
+  }
+
+  .footer__container .navbar {
+    order: 1;
+  }
+
+  .footer-email {
+    order: 2;
+    margin-top: 50px;
+  }
+
+  .footer__bottom {
+    width: 100%;
+    padding: 20px 30px 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* ===== Company ===== */
+  .company__list {
+    padding: 0 20px;
+    row-gap: 30px;
+  }
+
+  /* ===== Services ===== */
+  .services {
+    padding: 0 20px;
+  }
+
+  /* ===== Projects ===== */
+  .projects {
+    padding: 60px 20px;
+  }
+
+  /* ===== About ===== */
+  .about {
+    padding: 0 20px;
+  }
+
+  .about__desc {
+    width: 100%;
+  }
+
+  .about__content {
+    width: 100%;
+    padding: 30px 15px;
+    column-gap: 40px;
+  }
+
+  .about__title {
+    font-size: 1.6rem;
+  }
+
+  .about__play {
+    width: 77px;
+    height: 77px;
+  }
+
+  .about__video {
+    width: 100%;
+    height: 276px;
+  }
+
+  .about__img {
+    height: 100%;
+  }
+
+  .about__btn {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+  }
+
+  /* ===== Feedback ===== */
+  .feedback {
+    margin-top: 120px;
+    padding: 0px 20px;
+  }
+
+  .feedback__desc {
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .feedback__text {
+    width: 100%;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  .feedback__name {
+    font-size: 2.4rem;
+  }
+
+  .feedback__job {
+    margin-top: 10px;
+  }
+
+  /* ===== Questions ===== */
+  .questions {
+    margin-top: 120px;
+    padding: 0 20px;
+  }
+
+  .questions__title {
+    font-size: 2.4rem;
+    letter-spacing: -0.96px;
+  }
+
+  .question__btn {
+    width: 33px;
+    height: 33px;
+    font-size: 2.3rem;
+    flex-shrink: 0;
+  }
+
+  .question__text {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+
+  /* ===== Atmosphere ===== */
+  .atmosphere {
+    padding: 0 20px;
+  }
+
+  .atmosphere__desc {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .atmosphere__link {
+    font-size: 2rem;
+  }
+
+  .atmosphere__link::after {
+    bottom: 0;
+  }
+
+  .atmosphere__images {
+    margin-top: 60px;
+  }
+
+  /* ===== Banner ===== */
+  .banner {
+    padding: 36px 0;
+  }
+
+  .banner__heading {
+    width: 60%;
+    text-align: center;
+  }
+
+  .banner__desc {
+    width: 87%;
+    font-size: 1.6rem;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    position: relative;
+  }
+
+  .footer .navbar__item + .navbar__item {
+    margin-left: 20px;
+  }
+
+  .footer__bottom {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__policy {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    translate: -34% 0;
+  }
+}

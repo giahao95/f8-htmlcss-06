@@ -104,43 +104,46 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <!-- ===== Header ===== -->
     <header class="header">
-      <div class="header-email">
-        <a href="mailto:hi@arif.interactive" class="header-email__icon"
-          ><img src="./assets/icons/email.svg" alt=""
-        /></a>
-        <a href="mailto:hi@arif.interactive" class="header-email__link"
-          >hi@arif.interactive</a
-        >
+      <div class="header__container">
+        <div class="header-email">
+          <a href="mailto:hi@arif.interactive" class="header-email__icon"
+            ><img src="./assets/icons/email.svg" alt=""
+          /></a>
+          <a href="mailto:hi@arif.interactive" class="header-email__link"
+            >hi@arif.interactive</a
+          >
+        </div>
+
+        <a href="/" class="header__logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="Portfolio"
+            class="header__img"
+          />
+        </a>
+
+        <nav class="navbar">
+          <ul>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Projects</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Journey</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Service</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <a href="/">
-        <img
-          src="./assets/images/logo.png"
-          alt="Portfolio"
-          class="header__logo"
-        />
-      </a>
-
-      <nav class="navbar">
-        <ul>
-          <li class="navbar__item">
-            <a href="#!" class="navbar__link">Projects</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#!" class="navbar__link">Journey</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#!" class="navbar__link">Service</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#!" class="navbar__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -198,7 +201,7 @@
             </div>
             <div class="col-lg-8 col-12">
               <div class="row company__list">
-                <div class="col-lg-3 col-6">
+                <div class="col-sm-3 col-6">
                   <div class="company__brand">
                     <img src="./assets/icons/goole.svg" alt="Google" />
                     <p>Google</p>
@@ -211,7 +214,7 @@
                     <p>Upwork</p>
                   </div>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-sm-3 col-6">
                   <div class="company__brand">
                     <div class="company__icon--background .warner-bros-icon">
                       <img
@@ -230,7 +233,7 @@
                     <p>Creative Cloud</p>
                   </div>
                 </div>
-                <div class="col-lg-3 col-7">
+                <div class="col-sm-3 col-7">
                   <div class="company__brand">
                     <img src="./assets/icons/mailchimp.svg" alt="Mailchimp" />
                     <p>Mailchimp</p>
@@ -241,7 +244,7 @@
                     <p>Woocommerce</p>
                   </div>
                 </div>
-                <div class="col-lg-2 col-5">
+                <div class="col-sm-2 col-5">
                   <div class="company__brand">
                     <img src="./assets/icons/adobe.svg" alt="Adobe" />
                     <p>Adobe</p>
@@ -267,7 +270,7 @@
             non nisl tincidunt ut elementum turpis.
           </p>
 
-          <div class="row">
+          <div class="row services__list">
             <div class="col-12 col-lg-4">
               <div class="services-item">
                 <img src="./assets/icons/services-1.svg" alt="" />
@@ -301,6 +304,11 @@
               </div>
             </div>
           </div>
+          <div class="services__direction">
+            <div class="dot"></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+          </div>
         </div>
       </section>
 
@@ -323,7 +331,7 @@
           </div>
 
           <div class="row projects__bottom">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-sm-6">
               <section class="projects-item">
                 <div class="projects-item__content">
                   <h3 class="heading">Wally Website</h3>
@@ -354,7 +362,7 @@
               </section>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-sm-6">
               <section class="projects-item">
                 <div class="projects-item__content">
                   <h3 class="heading">Banking App</h3>
@@ -385,7 +393,7 @@
               </section>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-sm-6">
               <section class="projects-item">
                 <div class="projects-item__content">
                   <h3 class="heading">Web App</h3>
@@ -413,7 +421,7 @@
               </section>
             </div>
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-sm-6">
               <section class="projects-item">
                 <div class="projects-item__content">
                   <h3 class="heading">Oculus Website</h3>
@@ -683,8 +691,91 @@
               class="atmosphere__img"
             />
           </figure>
+          <div class="atmosphere__direction">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
       </section>
+
+      <!-- ===== Banner ===== -->
+      <section class="banner">
+        <img src="./assets/icons/banner-icon.png" alt="" class="banner__icon" />
+        <h2 class="heading banner__heading">Got a project? Let’s talk</h2>
+        <p class="banner__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non
+          nisl tincidunt ut elementum turpis.
+        </p>
+        <a href="#!" class="btn banner__btn">Book a Call</a>
+
+        <img
+          src="./assets/images/background.svg"
+          alt=""
+          class="banner__background-1"
+        />
+        <img
+          src="./assets/images/background.svg"
+          alt=""
+          class="banner__background-2"
+        />
+        <img
+          src="./assets/images/banner-background.svg"
+          alt=""
+          class="banner__background-3"
+        />
+      </section>
     </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer-email">
+          <a href="mailto:hi@arif.interactive" class="footer-email__icon"
+            ><img src="./assets/icons/email.svg" alt=""
+          /></a>
+          <a href="mailto:hi@arif.interactive" class="footer-email__link"
+            >hi@arif.interactive</a
+          >
+        </div>
+
+        <a href="/" class="footer__logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="Portfolio"
+            class="footer__img"
+          />
+        </a>
+
+        <nav class="navbar">
+          <ul>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Projects</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Journey</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Service</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy;interactiveArif 2021. All rights reserved.
+        </p>
+        <div class="footer__policy">
+          <a href="#!">Privacy Policy</a>
+          <a href="#!">Terms of Conditions</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

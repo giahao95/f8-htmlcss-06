@@ -105,22 +105,30 @@ a {
 
 /* ===== Header ===== */
 .header {
-  margin: 20px auto 0;
+  padding-top: 30px;
+  background-color: #fbfaff;
+}
+
+.header__container,
+.footer__container {
+  position: relative;
+  margin: auto;
   width: 1330px;
   max-width: calc(100vw - 48px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fbfaff;
 }
 
-.header-email {
+.header-email,
+.footer-email {
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
 
-.header-email__icon {
+.header-email__icon,
+.footer-email__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,15 +138,29 @@ a {
   border-radius: 50%;
 }
 
-.header-email__link {
+.header-email__link,
+.footer-email__link {
   color: #080415;
   font-size: 2.2rem;
+  font-weight: 500;
   text-decoration: underline;
 }
 
-.header__logo {
+.header__logo,
+.footer__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
   width: 100px;
   height: 100px;
+  z-index: 1;
+}
+
+.header__img,
+.footer__img {
+  width: 100%;
+  height: 100%;
 }
 
 .navbar__item {
@@ -150,9 +172,16 @@ a {
 }
 
 .navbar__link {
+  display: inline-block;
   color: #51586a;
   font-size: 1.8rem;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar__link:hover {
+  color: var(--primary-color);
+  scale: 1.1;
 }
 
 /* ===== Hero ===== */
@@ -255,7 +284,6 @@ h2.company__heading {
 .company__heading::before {
   content: "";
   position: absolute;
-  top: 0;
   left: 0;
   top: 20px;
   display: block;
@@ -328,6 +356,10 @@ h2.company__heading {
   line-height: 1.66;
 }
 
+.services__direction {
+  display: none;
+}
+
 /* ===== Projects ====== */
 .projects {
   margin-top: 140px;
@@ -349,6 +381,7 @@ h2.company__heading {
   color: #fff;
   font-size: 1.8rem;
   line-height: 1.66;
+  opacity: 0.7;
 }
 
 .projects__bottom {
@@ -400,6 +433,7 @@ h2.company__heading {
   top: 0;
   right: -11px;
   width: 427px;
+  opacity: 0.6;
 }
 
 .projects-item__background-right {
@@ -407,6 +441,7 @@ h2.company__heading {
   top: 0;
   right: -24px;
   width: 280px;
+  opacity: 0.6;
 }
 
 .projects__btn {
@@ -695,10 +730,108 @@ h2.company__heading {
   margin-top: 70px;
   display: flex;
   column-gap: 30px;
+  overflow: hidden;
 }
 
 .atmosphere__img {
   width: 370px;
   height: 529px;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.atmosphere__direction {
+  display: none;
+}
+
+/* ===== Banner ===== */
+.banner {
+  position: relative;
+  width: 1330px;
+  margin: 140px auto 0;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbfaff;
+  overflow: hidden;
+}
+
+.banner__heading {
+  margin-top: 10px;
+}
+
+.banner__desc {
+  width: 50%;
+  margin-top: 20px;
+  color: #51586a;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
+
+.banner__btn {
+  position: relative;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.banner__background-1 {
+  position: absolute;
+  left: -145px;
+  bottom: -120px;
+  width: 395px;
+  opacity: 0.5;
+}
+
+.banner__background-2 {
+  position: absolute;
+  left: 27%;
+  bottom: -30px;
+  width: 735px;
+  opacity: 0.5;
+}
+
+.banner__background-3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 60px;
+}
+
+.footer__bottom {
+  margin: 50px auto 0;
+  padding: 20px 120px 30px;
+  display: flex;
+  align-items: center;
+  width: 1429px;
+  border-top: 1px solid rgba(12, 7, 32, 0.2);
+}
+
+.footer__copyright {
+  font-size: 1.8rem;
+}
+
+.footer__policy {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  letter-spacing: -0.54px;
+}
+
+.footer__policy a:first-child {
+  padding-right: 23px;
+  color: #525771;
+}
+
+.footer__policy a:last-child {
+  padding-left: 13px;
+  color: #525771;
+  border-left: 1px solid rgba(82, 87, 113, 0.6);
 }
