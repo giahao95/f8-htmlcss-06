@@ -105,8 +105,13 @@ a {
 
 /* ===== Header ===== */
 .header {
-  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
   background-color: #fbfaff;
+  z-index: 9;
 }
 
 .header__container,
@@ -194,6 +199,7 @@ a {
 
 /* ===== Hero ===== */
 .hero {
+  margin-top: 76px;
   padding-top: 40px;
   position: relative;
   background-color: #fbfaff;
